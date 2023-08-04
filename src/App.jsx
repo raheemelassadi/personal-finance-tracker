@@ -8,17 +8,21 @@ import Overview from "./assets/components/Overview";
 import ExpenseList from "./assets/components/ExpenseLIst";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [budgetTotal, setBudgetTotal] = useState(0);
+
+  const handleSetBudget = (newBudgetTotal) => {
+    setBudgetTotal(newBudgetTotal);
+  };
 
   return (
-    <>
+    <div className="h-screen flex flex-col align-middle mt-8">
       <div className="flex gap-16">
-        <BudgetCard />
+        <BudgetCard setBudgetTotal={handleSetBudget} />
         <ExpenseCard />
       </div>
-      <Overview />
+      <Overview budgetTotal={budgetTotal} />
       <ExpenseList />
-    </>
+    </div>
   );
 }
 
