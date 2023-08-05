@@ -5,6 +5,7 @@ function BudgetCard({ setBudgetTotal }) {
 
   const handleClick = () => {
     setBudgetTotal(inputValue); // Call the callback function with the input value
+    setInputValue("");
   };
 
   const handleChange = (e) => {
@@ -13,7 +14,7 @@ function BudgetCard({ setBudgetTotal }) {
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
-      handleClick(); // Call the same function used for handling click event
+      handleClick(e); // Call the same function used for handling click event
     }
   };
 
