@@ -72,6 +72,7 @@ function ExpenseList({ expenseList, onUpdate }) {
                 defaultValue={expense.amount}
                 onChange={(event) => handleAmountChange(index, event)}
                 onKeyDown={(e) => handleKeyDown(e, index)}
+                autoFocus
               />
             ) : (
               <div className="col-span-1">
