@@ -6,12 +6,11 @@ import Overview from "./components/Overview";
 import ExpenseList from "./components/ExpenseLIst";
 
 function App() {
-  const [budgetTotal, setBudgetTotal] = useState(0);
+  const [budgetTotal, setBudgetTotal] = useState(200);
   const [expenseTotal, setExpenseTotal] = useState(0);
   const [balance, setBalance] = useState(0);
   const [expenseList, setExpenseList] = useState([
-    { name: "Sample Expense", amount: 100, isEditing: false },
-    { name: "gas", amount: 30, isEditing: false },
+    { name: "gas", amount: 40, isEditing: false },
   ]);
 
   console.log(expenseList);

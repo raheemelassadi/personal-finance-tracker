@@ -36,7 +36,7 @@ function BudgetCard({ setBudgetTotal }) {
       <button
         onClick={handleClick}
         type="button"
-        className="w-1/3 p-2 text-white bg-blue-700 rounded-md"
+        className="w-1/3 p-2 text-white bg-blue-700 rounded-md hover:bg-opacity-75 shadow-lg"
       >
         Set Budget
       </button>

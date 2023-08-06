@@ -12,6 +12,12 @@ function ExpenseCard({ onAddExpense }) {
     }
   };
 
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      handleAddExpense();
+    }
+  };
+
   return (
     <div className="flex flex-col text-left justify-between font-raleway w-1/2 p-10 bg-white rounded-lg shadow-lg">
       <h2 className="font-normal text-xl mb-4">Expenses</h2>
@@ -21,6 +27,7 @@ function ExpenseCard({ onAddExpense }) {
         placeholder="Enter Expense Category"
         value={expenseName}
         onChange={(e) => setExpenseName(e.target.value)}
+        onKeyPress={handleKeyPress} // Handle Enter key press
       />
       <br />
       <input
@@ -29,11 +36,12 @@ function ExpenseCard({ onAddExpense }) {
         placeholder="Enter Amount"
         value={expenseAmount}
         onChange={(e) => setExpenseAmount(e.target.value)}
+        onKeyPress={handleKeyPress} // Handle Enter key press
       />
       <br />
       <button
         type="button"
-        className="w-1/3 p-2 text-white bg-blue-700 rounded-md"
+        className="w-1/3 p-2 text-white bg-blue-700 rounded-md hover:bg-opacity-75 shadow-lg"
         onClick={handleAddExpense}
       >
         Add Expense
