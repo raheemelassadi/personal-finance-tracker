@@ -19,7 +19,7 @@ function BudgetCard({ setBudgetTotal }) {
   };
 
   return (
-    <div className="flex flex-col text-left font-raleway w-1/2 p-10 bg-white rounded-lg shadow-lg">
+    <div className="flex flex-col text-left font-raleway w-full md:w-1/2 p-10 bg-white rounded-lg shadow-lg">
       <div className="flex flex-col flex-grow">
         <h2 className="font-normal text-xl mb-4">Budget</h2>
         <input
@@ -36,7 +36,7 @@ function BudgetCard({ setBudgetTotal }) {
       <button
         onClick={handleClick}
         type="button"
-        className="w-1/3 p-2 text-white bg-blue-700 rounded-md hover:bg-opacity-75 shadow-lg"
+        className="md:w-1/3 p-2 text-white bg-blue-700 rounded-md hover:bg-opacity-75 shadow-lg mt-6"
       >
         Set Budget
       </button>

@@ -81,10 +81,9 @@ function ExpenseList({ expenseList, onUpdate }) {
             )}
             <div className="flex flex-row gap-3 col-span-1 justify-end">
               <p
-                className="cursor-pointer"
+                className="cursor-pointer hover:bg-opacity-75
+                shadow-lg"
                 onClick={() => handleClick(index)}
-                hover:bg-opacity-75
-                shadow-lg
               >
                 <svg
                   className="w-6 h-6 text-blue-700"
