@@ -21,7 +21,7 @@ The Expense Tracker app allows users to track their expenses and manage their bu
 
 ## Demo
 
-rel-finance-tracker.netlify.app
+[rel-finance-tracker.netlify.app](https://rel-personalfinancetracker.netlify.app/)
 
 ## Installation
 
